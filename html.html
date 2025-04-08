@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .example-code {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 18px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Learn HTML</h1>
+        <p>Everything you need to know to get started with HTML!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Introduction</a>
+        <a href="#">HTML Basics</a>
+        <a href="#">Examples</a>
+        <a href="#">Resources</a>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and design websites. It structures the content on the web. HTML is the foundation of most web pages, as it tells the browser how to display the text, images, and other content on a page.</p>
+        </section>
+
+        <section class="section">
+            <h2>HTML Basic Structure</h2>
+            <p>Every HTML document follows a basic structure:</p>
+            <div class="example-code">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Your Title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;This is a simple HTML page.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <p>This is the basic HTML structure. It starts with the `<!DOCTYPE html>` declaration to specify the document type, followed by the opening and closing `<html>` tags. Inside the `<head>`, we define metadata like the character set and title, and inside the `<body>`, we define the content that will be displayed on the web page.</p>
+        </section>
+
+        <section class="section">
+            <h2>HTML Elements</h2>
+            <p>HTML elements are the building blocks of a web page. They consist of an opening tag, content, and a closing tag. Here is an example of an HTML element:</p>
+            <div class="example-code">
+                &lt;p&gt;This is a paragraph&lt;/p&gt;
+            </div>
+            <p>The `<p>` tag defines a paragraph. Every tag usually has an opening tag (e.g., `<p>`) and a closing tag (e.g., `</p>`). Tags are used to define different types of content, such as headings, links, and images.</p>
+        </section>
+
+        <section class="section">
+            <h2>Learn More About HTML</h2>
+            <p>Now that you know the basics of HTML, you're ready to dive deeper! There are many more elements and attributes that you can use to create a fully functional web page.</p>
+            <a href="https://www.w3schools.com/html/" class="cta-button" target="_blank">Start Learning More</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Learn HTML | All rights reserved</p>
+        <p>
+            <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
